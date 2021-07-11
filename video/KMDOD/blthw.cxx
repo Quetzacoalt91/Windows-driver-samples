@@ -34,6 +34,7 @@ BOOLEAN SynchronizeVidSchNotifyInterrupt(_In_opt_ PVOID params)
     {
     case DXGK_INTERRUPT_DISPLAYONLY_VSYNC:
     case DXGK_INTERRUPT_DISPLAYONLY_PRESENT_PROGRESS:
+    case DXGK_INTERRUPT_DMA_COMPLETED:
         break;
     default:
         NT_ASSERT(FALSE);
